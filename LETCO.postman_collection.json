@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "9e1f65fa-bdb1-4d0a-a248-da95f3ceed9c",
+		"name": "LETCO",
+		"description": "Application that permit to get nearby individuals having your research skills",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29511503",
+		"_collection_link": "https://montuto.postman.co/workspace/My-Workspace~476a9d19-d889-4cfb-8c69-4c875f721716/collection/29511503-9e1f65fa-bdb1-4d0a-a248-da95f3ceed9c?action=share&source=collection_link&creator=29511503"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"NWAL Franck\",\r\n    \"pseudo\":\"NNYFC\",\r\n    \"email\":\"test1@gmail.com\",\r\n    \"password\":\"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{local_url}}/register"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "local_url",
+			"value": "http://localhost:8000",
+			"type": "string"
+		}
+	]
+}
