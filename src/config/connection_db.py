@@ -20,9 +20,10 @@ class DbConnection:
         self.password = password
 
     def connect(self):
-        engine = create_engine('postgresql+psycopg2://' + self.username + ':' + self.password +
-                               '@' + self.hostname + '/' + self.dbname)
         try:
+            engine = create_engine('postgresql+psycopg2://' + self.username + ':' +
+                                   self.password + '@' + self.hostname + '/' +
+                                   self.dbname)
             return engine
         except Exception as ex:
             print(f'Sorry failed to connect: {ex}')
